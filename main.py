@@ -4,14 +4,14 @@ from aiogram.dispatcher.filters import Text
 from config import dp
 from handlers.basic_handlers import (
     start,
-    info,
-    hello
+    info
 )
 from handlers.shop import (
     show_categories,
     show_category_books,
     show_book
 )
+from handlers.admin import check_curses
 
 
 if __name__ == "__main__":
@@ -22,5 +22,5 @@ if __name__ == "__main__":
     dp.register_message_handler(start, commands=["start"])
     dp.register_message_handler(info, commands=["info"])
     # в самом конце
-    dp.register_message_handler(hello)
+    dp.register_message_handler(check_curses)
     executor.start_polling(dp)

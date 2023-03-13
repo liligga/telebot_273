@@ -19,8 +19,8 @@ async def info(message: types.Message):
 
 
 # @dp.message_handler()
-async def hello(message: types.Message):
-    """функция которая обрабатывает все сообщения
-    которые не подходдят под остальные фильтры"""
-    await message.answer("Привет")
+# async def hello(message: types.Message):
+#     """функция которая обрабатывает все сообщения
+#     которые не подходдят под остальные фильтры"""
+#     await message.answer("Привет")
 
